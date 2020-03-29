@@ -13,7 +13,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.distribution.url>https://tal.jfrog.io/artifactory/libs-release</project.distribution.url>
+    <project.distribution.url>https://tal.jfrog.io/artifactory</project.distribution.url>
   </properties>
   
   <distributionManagement>
@@ -26,7 +26,7 @@
  <pluginRepositories>
     <pluginRepository>
       <id>central</id>
-      <url>${project.distribution.url}</url>
+      <url>${project.distribution.url}/libs-release</url>
     </pluginRepository>
   </pluginRepositories>  
   <dependencies>
@@ -101,7 +101,7 @@
                           <timeoutSec>60</timeoutSec>
                       </artifactory>
                       <publisher>
-                          <contextUrl>http://tal.jfrog.io/artifactory</contextUrl>
+                          <contextUrl>${project.distribution.url}</contextUrl>
                           <username>${username}</username>
                           <password>${password}</password>
                           <excludePatterns>*-tests.jar</excludePatterns>
@@ -109,7 +109,7 @@
                           <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
                       </publisher>
                       <buildInfo>
-                          <buildName>plugin-demo</buildName>
+                          <buildName>calculate-with-maven-artifactory-plugin</buildName>
                           <buildNumber>${buildnumber}</buildNumber>
                           <buildUrl>http://build-url.org</buildUrl>
                       </buildInfo>
