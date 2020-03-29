@@ -7,4 +7,4 @@ A tiny repo for running small experiments in CI/CD
 
 The code and the tests can be easily tweaked to introduce various error conditons for testing the CI/CD pipeline
 
-- mvn deploy -Dusername=admin -Dpassword=password -Dbuildnumber=1 
+- cd maths && mvn deploy -Dusername=admin -Dpassword=password -Dbuildnumber=1 
