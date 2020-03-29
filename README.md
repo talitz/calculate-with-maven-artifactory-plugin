@@ -7,5 +7,5 @@ A tiny repo for running small experiments in CI/CD
 
 The code and the tests can be easily tweaked to introduce various error conditons for testing the CI/CD pipeline
 
-# Deploy to Artifactory using the following command:
+<b>Deploy to Artifactory using the following command:</b>
 ```cd maths && mvn clean deploy -Dusername=admin -Dpassword=<YOUR-PASSWORD> -Dbuildnumber=7 -s settings.xml```
